@@ -1,0 +1,7 @@
+{
+  "name": "Fukuoka Smart Trip",
+  "description": "A high-fidelity PWA for managing a 5-day trip to Fukuoka, featuring interactive Google Maps, currency conversion, and a glassmorphism UI.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
