@@ -5,12 +5,12 @@ import { getAuth } from 'firebase/auth';
 // Your web app's Firebase configuration
 // Replace the values below with your actual Firebase project configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyADvjB1Rj8wUCGAGGPMYv0TvkPRS5H9kmI",
+  authDomain: "fukuoka-trip-app-abf73.firebaseapp.com",
+  projectId: "fukuoka-trip-app-abf73",
+  storageBucket: "fukuoka-trip-app-abf73.firebasestorage.app",
+  messagingSenderId: "222354731180",
+  appId: "1:222354731180:web:34c18a74239c92ae91ef09"
 };
 
 // Initialize Firebase
