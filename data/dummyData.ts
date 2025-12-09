@@ -1,180 +1,53 @@
-import { DayItinerary } from '../types';
-
-export const dummyItinerary: DayItinerary[] = [
+export const DUMMY_DATA = [
   {
     day: 1,
-    date: "Day 1: Arrival & Hakata",
-    items: [
-      {
-        id: "d1-1",
-        time: "14:00",
-        title: "Fukuoka Airport Arrival",
-        type: "transport",
-        cost: 260,
-        lat: 33.5859,
-        lng: 130.4501,
-        notes: "Take subway to Hakata Station"
-      },
-      {
-        id: "d1-2",
-        time: "15:30",
-        title: "Hakata Station City",
-        type: "shopping",
-        cost: 5000,
-        lat: 33.5902,
-        lng: 130.4207,
-        notes: "Shopping at AMU Plaza"
-      },
-      {
-        id: "d1-3",
-        time: "19:00",
-        title: "Nakasu Yatai Stalls",
-        type: "food",
-        cost: 3000,
-        lat: 33.5930,
-        lng: 130.4047,
-        notes: "Hakata Ramen experience"
-      }
-    ]
+    title: "Day 1｜抵達與博多美食散策",
+    center: { lat: 33.5902, lng: 130.4207 }, // 博多站
+    events: [
+      { id: "e1", type: "transport", title: "機場 ➔ 博多車站", time: "13:00", cost: 1500, coords: { lat: 33.5858, lng: 130.4503 } },
+      { id: "e2", type: "food", title: "ShinShin 博多拉麵", time: "19:00", cost: 1000, coords: { lat: 33.5902, lng: 130.4190 } },
+      { id: "e3", type: "shopping", title: "運河城 & 中洲屋台", time: "21:00", cost: 2500, coords: { lat: 33.5888, lng: 130.4035 } },
+    ],
   },
   {
     day: 2,
-    date: "Day 2: Dazaifu Tenmangu",
-    items: [
-      {
-        id: "d2-1",
-        time: "09:00",
-        title: "Nishitetsu Fukuoka (Tenjin)",
-        type: "transport",
-        cost: 410,
-        lat: 33.5898,
-        lng: 130.3995,
-        notes: "Train to Dazaifu"
-      },
-      {
-        id: "d2-2",
-        time: "10:30",
-        title: "Dazaifu Tenmangu Shrine",
-        type: "sightseeing",
-        cost: 0,
-        lat: 33.5215,
-        lng: 130.5349,
-        notes: "Touch the ox statue for wisdom"
-      },
-      {
-        id: "d2-3",
-        time: "12:00",
-        title: "Starbucks Dazaifu",
-        type: "food",
-        cost: 800,
-        lat: 33.5195,
-        lng: 130.5317,
-        notes: "Famous Kengo Kuma architecture"
-      },
-      {
-        id: "d2-4",
-        time: "15:00",
-        title: "Kyushu National Museum",
-        type: "sightseeing",
-        cost: 700,
-        lat: 33.5198,
-        lng: 130.5381
-      }
-    ]
+    title: "Day 2｜太宰府與戀愛神社巡禮",
+    center: { lat: 33.5196, lng: 130.5239 }, // 太宰府中心
+    events: [
+      { id: "e4", type: "spot", title: "太宰府天滿宮", time: "10:00", cost: 0, coords: { lat: 33.5186, lng: 130.5401 } },
+      { id: "e5", type: "food", title: "梅枝餅與星巴克 (建築大師設計)", time: "11:30", cost: 500, coords: { lat: 33.5196, lng: 130.5404 } },
+      { id: "e6", type: "spot", title: "竈門神社 (戀愛)", time: "14:00", cost: 0, coords: { lat: 33.5358, lng: 130.5434 } },
+      { id: "e7", type: "food", title: "牛腸鍋 (Motsunabe) 晚餐", time: "19:30", cost: 3000, coords: { lat: 33.5902, lng: 130.4207 } },
+    ],
   },
   {
     day: 3,
-    date: "Day 3: Yanagawa River",
-    items: [
-      {
-        id: "d3-1",
-        time: "10:00",
-        title: "Yanagawa River Punting",
-        type: "sightseeing",
-        cost: 1600,
-        lat: 33.1610,
-        lng: 130.4137,
-        notes: "70 min boat ride"
-      },
-      {
-        id: "d3-2",
-        time: "12:30",
-        title: "Unagi (Eel) Lunch",
-        type: "food",
-        cost: 4500,
-        lat: 33.1663,
-        lng: 130.3986,
-        notes: "Steamed eel specialty"
-      }
-    ]
+    title: "Day 3｜城市綠洲與天神購物",
+    center: { lat: 33.5935, lng: 130.3995 }, // 天神中心
+    events: [
+      { id: "e8", type: "spot", title: "大濠公園 & 福岡城跡", time: "10:00", cost: 0, coords: { lat: 33.5861, lng: 130.3764 } },
+      { id: "e9", type: "food", title: "柳橋連合市場 (海鮮午餐)", time: "13:00", cost: 1800, coords: { lat: 33.5867, lng: 130.4050 } },
+      { id: "e10", type: "shopping", title: "天神地下街大採買", time: "16:00", cost: 5000, coords: { lat: 33.5935, lng: 130.3995 } },
+    ],
   },
   {
     day: 4,
-    date: "Day 4: Itoshima Drive",
-    items: [
-      {
-        id: "d4-1",
-        time: "11:00",
-        title: "Sakurai Futamigaura",
-        type: "sightseeing",
-        cost: 0,
-        lat: 33.6457,
-        lng: 130.1983,
-        notes: "Couple rocks & Torii gate in the sea"
-      },
-      {
-        id: "d4-2",
-        time: "13:00",
-        title: "Sunset Road Cafe",
-        type: "food",
-        cost: 1500,
-        lat: 33.6339,
-        lng: 130.2132
-      },
-      {
-        id: "d4-3",
-        time: "15:30",
-        title: "Keya no Oto",
-        type: "sightseeing",
-        cost: 0,
-        lat: 33.6067,
-        lng: 130.1345,
-        notes: "Scenic cliff view"
-      }
-    ]
+    title: "Day 4｜門司港復古一日遊",
+    center: { lat: 33.9557, lng: 130.9628 }, // 門司港中心
+    events: [
+      { id: "e11", type: "transport", title: "JR ➔ 門司港 (來回)", time: "08:30", cost: 3000, coords: { lat: 33.8829, lng: 130.8036 } }, // 假設單程1500
+      { id: "e12", type: "food", title: "門司港燒咖哩", time: "12:30", cost: 1600, coords: { lat: 33.9557, lng: 130.9628 } },
+      { id: "e13", type: "food", title: "唐戶市場 (吃壽司)", time: "15:00", cost: 2500, coords: { lat: 33.9515, lng: 130.9328 } },
+    ],
   },
   {
     day: 5,
-    date: "Day 5: Tenjin Shopping",
-    items: [
-      {
-        id: "d5-1",
-        time: "10:00",
-        title: "Ohori Park",
-        type: "sightseeing",
-        cost: 0,
-        lat: 33.5878,
-        lng: 130.3764,
-        notes: "Morning walk"
-      },
-      {
-        id: "d5-2",
-        time: "12:00",
-        title: "Tenjin Underground Mall",
-        type: "shopping",
-        cost: 10000,
-        lat: 33.5916,
-        lng: 130.3989
-      },
-      {
-        id: "d5-3",
-        time: "16:00",
-        title: "Fukuoka Airport Departure",
-        type: "transport",
-        cost: 260,
-        lat: 33.5859,
-        lng: 130.4501
-      }
-    ]
-  }
+    title: "Day 5｜最終購物與返程",
+    center: { lat: 33.5859, lng: 130.4503 }, // 機場附近
+    events: [
+      { id: "e14", type: "shopping", title: "AEON MALL 最終採買", time: "10:00", cost: 3000, coords: { lat: 33.5932, lng: 130.4130 } },
+      { id: "e15", type: "food", title: "一蘭拉麵 (總本店)", time: "13:00", cost: 1000, coords: { lat: 33.5959, lng: 130.4036 } },
+      { id: "e16", type: "transport", title: "前往機場 Check-in", time: "15:00", cost: 0, coords: { lat: 33.5859, lng: 130.4503 } },
+    ],
+  },
 ];
