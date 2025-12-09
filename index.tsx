@@ -1,17 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './App.tsx'; // 確保這裡加上 .tsx
+import './index.css';
 
 /**
- * PACKAGE INSTALLATION INSTRUCTIONS
- * 
- * To run this locally, initialize a Vite project and install these dependencies:
- * 
- * npm install react react-dom framer-motion lucide-react @vis.gl/react-google-maps firebase clsx tailwind-merge
- * npm install -D tailwindcss postcss autoprefixer
- * 
- * Environment Variables (.env):
- * VITE_GOOGLE_MAPS_KEY=your_api_key_here
+ * PACKAGE INSTALLATION INSTRUCTIONS (此區塊註解不會影響程式碼，可以保留)
  */
 
 const rootElement = document.getElementById('root');
