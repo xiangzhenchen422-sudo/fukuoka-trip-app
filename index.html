@@ -5,7 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="https://fonts.gstatic.com/s/i/materialicons/travel_explore/v10/24px.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     
-    <!-- PWA Settings -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#fdfbf7">
@@ -13,12 +12,10 @@
     
     <title>Fukuoka Smart Trip</title>
 
-    <!-- Google Fonts: Zen Maru Gothic for a Japanese cute/clean vibe -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS (CDN for runtime generation) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -58,20 +55,9 @@
         scrollbar-width: none;
       }
     </style>
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
-    "@vis.gl/react-google-maps": "https://aistudiocdn.com/@vis.gl/react-google-maps@^1.7.1"
-  }
-}
-</script>
-</head>
+  </head>
   <body class="bg-jp-white text-jp-black antialiased overflow-hidden">
     <div id="root" class="h-full w-full"></div>
+    <script type="module" src="/src/main.tsx"></script> 
   </body>
 </html>
